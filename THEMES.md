@@ -1,4 +1,4 @@
-Copy/paste this into docs/THEMES.md.
+
 # Theme Development
 
 Curator themes control **presentation**: layouts, templates, and assets (CSS/JS). Business logic (search, checkout, downloads, permissions) stays in core.
