@@ -1,0 +1,1 @@
+Markdown# Changelog## 1.0.0- Initial stable release of Curator Engine.- Search-first ecommerce core.- Digital downloads flow (accounts + My Downloads).- Theme + plugin system foundations.- Marketplace pipeline support.- Documentation: install, quick start, architecture, hooks, plugins/themes, submission guidelines.Copy
