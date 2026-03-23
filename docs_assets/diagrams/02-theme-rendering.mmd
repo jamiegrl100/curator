@@ -1,0 +1,8 @@
+flowchart LR
+    A[Route handler] --> B[curator_render]
+    B --> C[ThemeManager resolves active theme]
+    C --> D[ThemeRenderer loads layout.php]
+    D --> E[Template partials]
+    E --> F[Page template]
+    F --> G[Theme assets]
+    G --> H[Final HTML + CSS + JS]

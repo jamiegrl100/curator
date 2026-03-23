@@ -1,0 +1,12 @@
+flowchart TD
+    A[/setup GET] --> B{Any admin exists?}
+    B -->|Yes| C[Redirect to /login]
+    B -->|No| D[Render admin bootstrap form]
+    D --> E[/setup POST]
+    E --> F[Validate CSRF]
+    F --> G[Validate email + password]
+    G --> H{Email available?}
+    H -->|No| I[Show error]
+    H -->|Yes| J[Create user with is_admin = 1]
+    J --> K[Hash password with PASSWORD_DEFAULT]
+    K --> L[Redirect to /login with success message]

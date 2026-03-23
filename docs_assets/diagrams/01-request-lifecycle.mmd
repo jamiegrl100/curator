@@ -1,0 +1,12 @@
+flowchart TD
+    A[Browser request] --> B[index.php]
+    B --> C{Route match}
+    C -->|Public page| D[Render theme template]
+    C -->|Account route| E[Require login]
+    C -->|Admin route| F[Require admin]
+    D --> G[Theme renderer]
+    E --> G
+    F --> H[Admin PHP page]
+    G --> I[HTML response]
+    H --> I
+    I --> J[Browser renders page]

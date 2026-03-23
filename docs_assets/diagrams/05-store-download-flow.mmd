@@ -1,0 +1,9 @@
+flowchart LR
+    A[Signed-in buyer] --> B[Open account downloads]
+    B --> C[Download link]
+    C --> D[DownloadService / token validation]
+    D --> E{Token valid?}
+    E -->|No| F[Show error]
+    E -->|Yes| G[Read file metadata]
+    G --> H[Increment download count]
+    H --> I[Stream file response]

@@ -1,0 +1,12 @@
+flowchart TD
+    A[Bootstrap starts] --> B[Load plugin registry]
+    B --> C{Safe mode enabled?}
+    C -->|Yes| D[Skip plugin runtime on admin requests]
+    C -->|No| E[Register plugin hooks]
+    E --> F[Register routes]
+    E --> G[Register admin pages]
+    E --> H[Register assets]
+    D --> I[Admin loads without plugin execution]
+    F --> J[Runtime request handling]
+    G --> J
+    H --> J
