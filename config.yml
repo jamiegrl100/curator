@@ -1,0 +1,1 @@
+YAMLblank_issues_enabled: falsecontact_links:  - name: Documentation    url: https://curator.snippetsupply.com/docs    about: Read the docs before opening an issue  - name: Security issues    url: https://curator.snippetsupply.com/docs/security    about: Please report security issues privately (see SECURITY.md)Copy
